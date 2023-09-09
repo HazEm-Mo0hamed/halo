@@ -126,25 +126,19 @@ numbers.map(function(el) {
 })
  ```
 
- **ternary operators**
- ```javascript
+ **array method(filter)**
+ 
 
 
-var hero= {
-    name:"hazem",
-    age:30,
-    genrade:"male"
+```javascript
+var numbers = [1, 2, 3, 4, 5];
+function getCamber(itemed) {
+return itemed.filter(function (numbers) {
+    return numbers>=4
+    
+})
+    
 }
 
-hero.name==="hazem"?console.log("al zamalky"):console.log("ahlawy");
-var result2 =hero.name==="hazem"?" al zamalky":"ahlawy";
-
-console.log(` hola ${result2} ${hero.name}`);
-
-    
- hero.age<20
- ?console.log("baby")
- :hero.age>20 && hero.age<40
- ?console.log("youth")
- :console.log("old");   
-
+console.log(getCamber(numbers));
+```
